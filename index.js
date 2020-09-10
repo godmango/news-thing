@@ -3,10 +3,10 @@ let keyword = "";
 let category = "";
 let newsName = "";
 let page = "1";
-let newsList2 = [];
+//let newsList2 = [];
 const loadMorePage = () => {
 	page++;
-	getNews(newsList2);
+	getNews();
 };
 
 const searchCategory = () => {
