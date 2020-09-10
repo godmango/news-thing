@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div><h1 class="title">newsroom</h1></div>
+
+		<div>
+			<select
+				onchange="searchCategory()"
+				name="category select"
+				id="categoryChoise"
+			>
+				<option>Select Category</option>
+				<option value="Business">Business</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="General">General</option>
+				<option value="Health">Health</option>
+				<option value="Science">Science</option>
+				<option value="Sports">Sports</option>
+				<option value="Technology">Technology</option>
+			</select>
+		</div>
+
+		<div class="vertical-menu" id="vertical-menu">
+			<a>Link 1</a>
+		</div>
+
+		<div id="newsBoard">
+			<div class="news">
+				<img
+					src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"
+					width="200"
+				/>
+				<div>
+					<h2>Just came out</h2>
+					<p>so much funnn</p>
+					<div>some hours ago</div>
+					<div>CNN</div>
+				</div>
+			</div>
+		</div>
+		<div class="botButton">
+			<button onclick="loadMorePage()">Load more</button>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+			integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
